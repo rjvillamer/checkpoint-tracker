@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkpoint Tracker</title>
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+		<link rel="stylesheet" href="style/style.css">
+		
+    </head>
+    <body>
+	<div class="title">NCR Checkpoint Tracker</div>
+	<div class="subtitle">For Educational purposes only. Created by RJ Villamer</div>
+	
+	<div class="search-container">
+	 <div class="search">
+	 <input type="text" id="zip-code-input" placeholder="Enter City">
+	 <i class="fas fa-search" onclick="searchStores()"></i>
+	 </div>
+	</div>
+	
+	<div class="store-list-container">
+		<div class="stores-list">
+			<div class="store-container">
+				<div class="store-container-background">
+						<div class="store-info-container">
+							<div class="store-address">
+								<span>Muntinlupa</span>
+								<span>Poblacion</span>
+							</div>
+							<div class="store-phone-number">
+							32324324
+							</div>
+						</div>
+					<div class="store-number-container">
+						<div class="store-number">
+						1
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="map"></div>
+	<script type="text/javascript" charset="utf-8" src="https://raw.githubusercontent.com/sorxrob/coronavirus-ph-api/master/services/Checkpoint.js"></script>
+	<script src="js/index.js"></script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7E1z006DqGeBlASRtJm6IB7444z44z2Q&callback=initMap">
+</script>
+    </body>
+</html>
